@@ -13,7 +13,7 @@ public class Main {
   public static void main(String[] args) throws Exception {
     AnalysisEngineDescription aed = createEngineDescription(MauiTopicExtractorAnnotator.class);
 
-    createDependencyAndBind(aed, MauiModelResource.PARAM_MODEL(), MauiModelResource.class, MauiModelResource.PARAM_MODEL(),
+    createDependencyAndBind(aed, MauiModelResource.PARAM_MODEL(), MauiModelResource.class, "",
       // Parameters
       MauiModelResource.PARAM_TRAIN_DIR(), "src/main/resources/data/term_assignment/train_fr",
       MauiModelResource.PARAM_VOCABULARY(), "src/main/resources/data/vocabularies/agrovoc_fr.rdf.gz",

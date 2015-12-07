@@ -6,19 +6,19 @@
 
 Before extracting topics, you have to build a model.
 Here the model, aka `MauiFilter` is a UIMA resource.
-Bind it to an MauiTopicExtractorAnnotator` analysis engine description and set the parameters for the model.  
+Bind it to an `MauiTopicExtractorAnnotator` analysis engine description and set the parameters for the model.  
 It is fully parameterizable as expected with Maui.
 
 Then create your Analysis engine from its description and set its parameters.
 
-And of course, extracted topics are added in the `CA`.
- 
+And of course, extracted topics are added to the `CAS`.
+
 **TL;DR: show me the code**
 
 ```java
 AnalysisEngineDescription aed = createEngineDescription(MauiTopicExtractorAnnotator.class);
 
-createDependencyAndBind(aed, MauiModelResource.PARAM_MODEL(), MauiModelResource.class, MauiModelResource.PARAM_MODEL(),
+createDependencyAndBind(aed, MauiModelResource.PARAM_MODEL(), MauiModelResource.class, "",
   // Parameters
   MauiModelResource.PARAM_TRAIN_DIR(), "src/main/resources/data/term_assignment/train_fr",
   MauiModelResource.PARAM_VOCABULARY(), "src/main/resources/data/vocabularies/agrovoc_fr.rdf.gz",
