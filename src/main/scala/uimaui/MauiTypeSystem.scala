@@ -1,6 +1,6 @@
 package uimaui
 
-import com.github.jenshaase.uimascala.core.description._
+/*import com.github.jenshaase.uimascala.core.description._
 
 @TypeSystemDescription
 object MauiTypeSystem {
@@ -10,4 +10,4 @@ object MauiTypeSystem {
     val correct = Feature[Boolean]
     val probability = Feature[Double]
   }
-}
+}*/
