@@ -1,4 +1,4 @@
-# uimaui-mais-non-merci
+# uimaui
 
 *Put some Maui in your UIMA pipelines, if you are crazy enough*
 
@@ -39,21 +39,4 @@ AnalysisEngine ae = createEngine(aed,
 ae.process(ae.newJCas());
 ```
 
-Despite the fact that the UIMA API is ugly as hell (even with uimaFit), using *uimaui-mais-non-merci* is very easy.
-
-## Type system
-
-You want topics, right? Here is your topics.
-
-```scala
-object MauiTypeSystem {
-  val Topic = Annotation {
-    val id = Feature[String]
-    val title = Feature[String]
-    val correct = Feature[Boolean]
-    val probability = Feature[Double]
-  }
-}
-```
-
-This is the type-safe type system. And it's pretty straightforward.
+Despite the fact that the UIMA API is ugly as hell (even with uimaFit), using *uimaui* is very easy.
